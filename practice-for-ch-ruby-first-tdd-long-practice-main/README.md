@@ -1,16 +1,16 @@
 # Test-Driven Development
 
 Do all of the following exercises using Test-Driven Development (TDD). That
-means writing specs **first**!  
+means writing specs **first**!
 
 When approaching each problem, make sure to
 
-  1. Read the entire problem statement.
-  2. Talk with your partner to identify test cases and key functionality to
-     expect from your code.
-  3. Write RSpec tests.
-  4. Write the method you now have tests for. Follow the red-green-refactor
-     approach until all specs pass.  
+1. Read the entire problem statement.
+2. Talk with your partner to identify test cases and key functionality to
+   expect from your code.
+3. Write RSpec tests.
+4. Write the method you now have tests for. Follow the red-green-refactor
+   approach until all specs pass.
 
 **Expected time: 2 hrs**
 
@@ -18,11 +18,11 @@ When approaching each problem, make sure to
 
 By the end of this practice, you should
 
-* Be able to explain what functionality your testing will cover
-* Know the hierarchy / syntax of RSpec methods (`describe`, `before`, `let`,
+- Be able to explain what functionality your testing will cover
+- Know the hierarchy / syntax of RSpec methods (`describe`, `before`, `let`,
   `it`, `expect`, etc.)
-* Be comfortable writing RSpec tests
-* Know when to use `let` and `subject`
+- Be comfortable writing RSpec tests
+- Know when to use `let` and `subject`
 
 ## `uniq`
 
@@ -49,8 +49,8 @@ sorted "dictionary-wise":
 [-1, 0, 2, -2, 1].two_sum # => [[0, 4], [2, 3]]
 ```
 
-* `[0, 2]` before `[2, 1]` (smaller first elements come first)
-* `[0, 1]` before `[0, 2]` (then smaller second elements come first)
+- `[0, 2]` before `[2, 1]` (smaller first elements come first)
+- `[0, 1]` before `[0, 2]` (then smaller second elements come first)
 
 ## `my_transpose`
 
@@ -98,7 +98,7 @@ my_transpose([
 
 Write a method that takes an array of stock prices (prices on days 0, 1, ...),
 and outputs the most profitable pair of days on which to first buy the stock and
-then sell the stock.  Remember, you can't sell stock before you buy it!
+then sell the stock. Remember, you can't sell stock before you buy it!
 
 ## Towers of Hanoi
 
@@ -117,15 +117,15 @@ discs to the final pile. If so, they win!
 **Note:** Don't worry about testing the UI. Testing console I/O is tricky (i.e.,
 don't bother checking `gets` or `puts`). Focus on:
 
-* `#move`
-* `#won?`
+- `#move`
+- `#won?`
 
 **When you're finished, get a code review from an Instructor!**
 
 ## Resources
 
-* [Ruby Doc on Array](http://www.ruby-doc.org/3.1.3/Array.html)
-* [Ruby Array Article](http://zetcode.com/lang/rubytutorial/arrays/)
+- [Ruby Doc on Array](http://www.ruby-doc.org/3.1.3/Array.html)
+- [Ruby Array Article](http://zetcode.com/lang/rubytutorial/arrays/)
 
 [gets-and-chomp]: http://andreacfm.com/ruby/2011/06/11/learning-ruby-gets-and-chomp.html
 [Hanoi]: http://en.wikipedia.org/wiki/Towers_of_hanoi
