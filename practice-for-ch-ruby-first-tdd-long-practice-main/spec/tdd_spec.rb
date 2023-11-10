@@ -1,17 +1,24 @@
 require 'rspec'
-# require 'tdd'
 require_relative '../lib/tdd.rb'
 
   describe "#my_uniq" do
     let(:arr_1) { [1,2,3,3] } #original
     let(:arr_2) { [1,2,3] }   # correct output 
-
-    it "should accept an array as an argument" do 
-      expect { my_uniq(arr_1) }.to_not raise_error
-      # expect(my_uniq("big boy string")).to raise_error
-      # expect(my_uniq(1230)).to raise_error("wrong type")    
+    
+    context "with valid arguments" do 
+      it "should accept an array as an argument" do 
+        expect { my_uniq(arr_1) }.to_not raise_error
+      end
     end
+    
+    context "with invalide arguments" do 
+      it "should raise error when input is not an array" do
+        expect { my_uniq("big boy string") }.to raise_error
+        expect { my_uniq(1230) } .to raise_error("wrong type")    
+      end
+    end 
 
+    
     # it "should return a new array" do
     #   expect(my_uniq(arr_1).to eq(arr_2)
     # end
